@@ -1,0 +1,50 @@
+/**CSS STYLES**/
+
+body, main {
+    display: flex
+    
+}
+body {
+    flex-direction: column;
+  }
+  
+  main {
+    flex-direction: row;
+  }
+  
+  main {
+    flex: auto;
+  }
+  
+  article {
+    flex: 2;
+    overflow-y: auto;
+  }
+  
+  aside {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  thead {
+    background-color: #C0C0C0;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #FFFFF0;
+  }
+  body {
+    background-color: #FFF8DC;
+    color: #00008B;
+    font-family: Tahoma (sans-serif);
+  }  
