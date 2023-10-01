@@ -2,13 +2,45 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=radio] {
+ background-color: #ccc;
+
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+</style>
 </head>
   <body>
     <form action="">
       <label for="name">Name</label>
-      <input type="text" id="name" required />
+      <input type="text" id="name" name="name" placeholder="Your name.."/required>
       <label for="email">Email</label>
-      <input type="email" id="email" required />
+      <input type="text" id="email" name="Email" placeholder="Enter Email Address.." required />
       <label for="preference">Subscription Preference</label>
       <input
         type="radio"
@@ -26,7 +58,7 @@
         required
       />
       <label for="yearly">Yearly</label>
-      <button type="submit">Submit</button>
+      <input type="submit" value="Submit">
     </form>
   </body>
 </html>
